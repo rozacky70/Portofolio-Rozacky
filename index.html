@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Abdul Rozacky</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #006400;
+      --secondary: #f4f4f4;
+      --text: #333;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--secondary);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin: 0 auto;
+      display: block;
+    }
+
+    section {
+      padding: 1.5rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .box {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .education-grid, .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .edu-card, .ach-card {
+      background: var(--secondary);
+      padding: 1rem;
+      border-left: 5px solid var(--primary);
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .ach-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-icons li {
+      list-style: none;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-icons i {
+      margin-right: 12px;
+      font-size: 1.2rem;
+      color: var(--primary);
+      min-width: 25px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Abdul Rozacky</h1>
+  <img src="foto.jpg" alt="Foto Abdul Rozacky" class="profile-img">
+</header>
+
+<section class="box">
+  <h2>Informasi Pribadi</h2>
+  <ul>
+    <li><strong>Nama:</strong> Abdul Rozacky</li>
+    <li><strong>Jenis Kelamin:</strong> Laki-laki</li>
+    <li><strong>Agama:</strong> Islam</li>
+    <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+    <li><strong>Status:</strong> Mahasiswa</li>
+  </ul>
+  <p>Nama saya Abdul Rozacky, biasa dipanggil Rozac atau Zacky. Saya adalah mahasiswa program studi Sistem Informasi di Fakultas Teknik dan Informatika, Universitas AKI, saat ini berada di semester 4.<strong Moto hidup saya adalah:
+    "Hidup adalah tentang memberi arti, menjadi bermanfaat bagi sesama adalah tujuan tertinggi."></strong>
+    
+    Selain belajar, saya juga senang bersosialisasi dengan teman-teman dan mengikuti berbagai kegiatan yang dapat meningkatkan pengalaman serta wawasan saya.</p>
+</section>
+
+<section class="box">
+  <h2>Riwayat Pendidikan</h2>
+  <div class="education-grid">
+    <div class="edu-card">
+      <h4>MI Rujchaniyyah</h4>
+      <p>Lulus tahun 2017</p>
+    </div>
+    <div class="edu-card">
+      <h4>MTs Taqwiyatul Wathon</h4>
+      <p>Lulus tahun 2020</p>
+    </div>
+    <div class="edu-card">
+      <h4>MA Taqwiyatul Wathon</h4>
+      <p>Lulus tahun 2023</p>
+    </div>
+    <div class="edu-card">
+      <h4>Universitas AKI</h4>
+      <p>2023 – Sekarang</p>
+    </div>
+  </div>
+</section>
+
+<section class="box">
+  <h2>Prestasi</h2>
+  <div class="achievement-grid">
+    <div class="ach-card">
+      <img src="prestasi 1.jpg" alt="Prestasi 1">
+      <h4>Juara 1 Twizbbonize Unaki Insight</h4>
+      <p>Meraih juara 1 lomba Twizbbonize Unaki Insight Tahun 2024.</p>
+    </div>
+    <div class="ach-card">
+      <img src="prestasi 2.jpg" alt="Prestasi 2">
+      <h4>Peserta KSM 2022</h4>
+      <p>Peserta KSM Tahun 2022 Bidang studi Geografi Terintegrasi Tingkat Kab.Demak.</p>
+    </div>
+    <div class="ach-card">
+      <img src="prestasi 3.jpg" alt="Prestasi 3">
+      <h4>Peringkat 1 Paralel</h4>
+      <p>Peringkat 1 Paralel Semester Ganjil Kelas 12 Tahun 2022.</p>
+    </div>
+  </div>
+</section>
+
+<section class="box">
+  <h2>Kontak</h2>
+  <ul class="contact-icons">
+    <li><i class="fas fa-envelope"></i><a href="mailto: 222230024@student.unaki.ac.id">222230024@student.unaki.ac.id</a></li>
+    <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/6288216233987" target="_blank">+62 882 1623 3987</a></li>
+    <li><i class="fab fa-instagram"></i><a href="https://instagram.com/rzcky_70" target="_blank">@rzcky_70</a></li>
+    <li><i class="fab fa-threads"></i><a href="https://www.threads.net/@rzcky_70" target="_blank">@rzcky_70</a></li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Abdul Rozacky
+</footer>
+
+</body>
+</html>
